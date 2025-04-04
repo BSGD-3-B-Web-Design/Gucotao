@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HERO PAGE</title>
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+        }
+
+        /* Make body take full height */
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #2386bb;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Site Title */
+        .site-title {
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #1abc58;
+        }
+
+        /* Main Content Wrapper */
+        .content {
+            flex: 2;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://i.pinimg.com/736x/fd/a4/2f/fda42f66fca6afafa9b205d5621d0ce1.jpg') no-repeat center center/cover;
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            height: auto;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 5px;
+            color: rgb(255, 255, 255);
+            text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background: #2386bb;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #000000;
+        }
+
+        /* Services Section */
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 10px 50px;
+            background: rgba(0, 0, 0, 0); /* Dark background to make text readable */
+            width: 100%;
+            color: white;
+            z-index: 1;
+            margin-top: 150px;
+            padding-top: 20px;
+        }
+
+        .service-box {
+            background: rgba(0, 0, 0, 0.301); /* Slight transparency for service boxes */
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .service-box h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #2386bb;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            margin-top: auto;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="site-title">UNLEASH THE BEAST! </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Hero Section with Services Inside -->
+        <section class="hero">
+            <h1>BEASTDOMINUS!</h1>
+            <p>ROAR. CONQUER. REPEAT.</p>
+            <button class="btn">IGNITE & ACCELERATE!</button>
+
+            <!-- Services Section Inside Hero -->
+            <section class="services">
+                <article class="service-box">
+                    <h3>Smart Car Integration</h3>
+                    <p>Enhance your ride with Horse-powered telemetry and smart driving enhancements.</p>
+                </article>
+                <article class="service-box">
+                    <h3>High-End Detailing</h3>
+                    <p>Keep your supercar pristine with professional ceramic coating and detailing.
+                    </p>
+                </article>
+                <article class="service-box">
+                    <h3>Exotic Car Tuning</h3>
+                    <p>Unlock the full potential of your supercar with expert performance tuning.</p>
+                </article>
+            </section>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © Copyright 2025 | Designed by Xhander Nissi Gucotano
+    </footer>
+
+</body>
+</html>
